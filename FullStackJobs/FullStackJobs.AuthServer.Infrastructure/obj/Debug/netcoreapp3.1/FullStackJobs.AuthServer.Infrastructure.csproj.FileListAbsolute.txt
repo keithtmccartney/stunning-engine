@@ -1,0 +1,8 @@
+G:\git\Source\Repos\stunning-engine\FullStackJobs\FullStackJobs.AuthServer.Infrastructure\bin\Debug\netcoreapp3.1\FullStackJobs.AuthServer.Infrastructure.deps.json
+G:\git\Source\Repos\stunning-engine\FullStackJobs\FullStackJobs.AuthServer.Infrastructure\bin\Debug\netcoreapp3.1\FullStackJobs.AuthServer.Infrastructure.dll
+G:\git\Source\Repos\stunning-engine\FullStackJobs\FullStackJobs.AuthServer.Infrastructure\obj\Debug\netcoreapp3.1\FullStackJobs.AuthServer.Infrastructure.csprojAssemblyReference.cache
+G:\git\Source\Repos\stunning-engine\FullStackJobs\FullStackJobs.AuthServer.Infrastructure\obj\Debug\netcoreapp3.1\FullStackJobs.AuthServer.Infrastructure.AssemblyInfoInputs.cache
+G:\git\Source\Repos\stunning-engine\FullStackJobs\FullStackJobs.AuthServer.Infrastructure\obj\Debug\netcoreapp3.1\FullStackJobs.AuthServer.Infrastructure.AssemblyInfo.cs
+G:\git\Source\Repos\stunning-engine\FullStackJobs\FullStackJobs.AuthServer.Infrastructure\bin\Debug\netcoreapp3.1\FullStackJobs.AuthServer.Infrastructure.runtimeconfig.json
+G:\git\Source\Repos\stunning-engine\FullStackJobs\FullStackJobs.AuthServer.Infrastructure\bin\Debug\netcoreapp3.1\FullStackJobs.AuthServer.Infrastructure.runtimeconfig.dev.json
+G:\git\Source\Repos\stunning-engine\FullStackJobs\FullStackJobs.AuthServer.Infrastructure\obj\Debug\netcoreapp3.1\FullStackJobs.AuthServer.Infrastructure.genruntimeconfig.cache
