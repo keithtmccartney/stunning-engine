@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace FullStackJobs.AuthServer.Infrastructure
+namespace FullStackJobs.AuthServer.Infrastructure.Data.Identity
 {
     public class AppUser : IdentityUser
     {
