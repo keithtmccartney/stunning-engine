@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FullStackJobs",
+    "\\FullStackJobs\\FullStackJobs.AuthServer",
+    "\\FullStackJobs\\FullStackJobs.AuthServer.Infrastructure"
   ],
   "PreviewInSolutionExplorer": false
 }
