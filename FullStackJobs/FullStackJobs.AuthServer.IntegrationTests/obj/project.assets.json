@@ -34,11 +34,11 @@
           "lib/netstandard2.0/IdentityModel.dll": {}
         }
       },
-      "IdentityServer4/4.1.0": {
+      "IdentityServer4/4.1.1": {
         "type": "package",
         "dependencies": {
           "IdentityModel": "4.4.0",
-          "IdentityServer4.Storage": "4.1.0",
+          "IdentityServer4.Storage": "4.1.1",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "3.1.0",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.6.0",
           "Newtonsoft.Json": "12.0.2"
@@ -48,6 +48,21 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/IdentityServer4.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "IdentityServer4.AspNetIdentity/4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "IdentityServer4": "4.1.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/IdentityServer4.AspNetIdentity.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/IdentityServer4.AspNetIdentity.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -80,7 +95,7 @@
           "lib/netstandard2.0/IdentityServer4.EntityFramework.Storage.dll": {}
         }
       },
-      "IdentityServer4.Storage/4.1.0": {
+      "IdentityServer4.Storage/4.1.1": {
         "type": "package",
         "dependencies": {
           "IdentityModel": "4.4.0"
@@ -3545,6 +3560,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "FullStackJobs.AuthServer.Infrastructure": "1.0.0",
+          "IdentityServer4.AspNetIdentity": "4.1.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.4"
         },
         "compile": {
@@ -3649,19 +3665,34 @@
         "lib/netstandard2.0/IdentityModel.xml"
       ]
     },
-    "IdentityServer4/4.1.0": {
-      "sha512": "9+ACQd/X4JYQTcNHn+6yMNeqPI2ItKA6YmTjNRem4nqFGhHqkXXYcQpJSU3FyMlXjwTr68zTrz9lwqxSOarvNg==",
+    "IdentityServer4/4.1.1": {
+      "sha512": "PA7IYDMoUQQY7czXa8lmIorvMvLkbjUaWCpB9+guG6N4EvpyHWwsccDXrc/rHIKDdtXsqSgo5jIbsu3y7qOqww==",
       "type": "package",
-      "path": "identityserver4/4.1.0",
+      "path": "identityserver4/4.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.jpg",
-        "identityserver4.4.1.0.nupkg.sha512",
+        "identityserver4.4.1.1.nupkg.sha512",
         "identityserver4.nuspec",
         "lib/netcoreapp3.1/IdentityServer4.dll",
         "lib/netcoreapp3.1/IdentityServer4.pdb",
         "lib/netcoreapp3.1/IdentityServer4.xml"
+      ]
+    },
+    "IdentityServer4.AspNetIdentity/4.1.1": {
+      "sha512": "lOLVj6VMezSK1UX9/tffW7doJ+Mw7dgAY3shaOvtNAQIJMLUAiFGimc3YEgAunC+vU0Lo1ZKGaqgHEM3N6H/fA==",
+      "type": "package",
+      "path": "identityserver4.aspnetidentity/4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.jpg",
+        "identityserver4.aspnetidentity.4.1.1.nupkg.sha512",
+        "identityserver4.aspnetidentity.nuspec",
+        "lib/netcoreapp3.1/IdentityServer4.AspNetIdentity.dll",
+        "lib/netcoreapp3.1/IdentityServer4.AspNetIdentity.pdb",
+        "lib/netcoreapp3.1/IdentityServer4.AspNetIdentity.xml"
       ]
     },
     "IdentityServer4.EntityFramework/4.1.0": {
@@ -3694,15 +3725,15 @@
         "lib/netstandard2.0/IdentityServer4.EntityFramework.Storage.xml"
       ]
     },
-    "IdentityServer4.Storage/4.1.0": {
-      "sha512": "qs3rohfq5UuxGXiHOWygSC1VB7XM+oGg/hu/mU+CYJcdEeGetIP3tiLg8+YO78Lbo07gRTka3LUnwHGAuVzH6A==",
+    "IdentityServer4.Storage/4.1.1": {
+      "sha512": "RfbD+kx9/Nss5Cbn43PwUt2LU2ELXZVNamnjX4HsOIscBF+5qLHkofuCd0Gj3Qn4wfO6f/vSLYgvofZRHdVWUg==",
       "type": "package",
-      "path": "identityserver4.storage/4.1.0",
+      "path": "identityserver4.storage/4.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.jpg",
-        "identityserver4.storage.4.1.0.nupkg.sha512",
+        "identityserver4.storage.4.1.1.nupkg.sha512",
         "identityserver4.storage.nuspec",
         "lib/netstandard2.0/IdentityServer4.Storage.dll",
         "lib/netstandard2.0/IdentityServer4.Storage.pdb",
