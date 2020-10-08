@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullStackJobs.AuthServer", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullStackJobs.AuthServer.Infrastructure", "FullStackJobs.AuthServer.Infrastructure\FullStackJobs.AuthServer.Infrastructure.csproj", "{7C51D2D5-1ED0-4784-881F-BC5281BAE82D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullStackJobs.AuthServer.IntegrationTests", "FullStackJobs.AuthServer.IntegrationTests\FullStackJobs.AuthServer.IntegrationTests.csproj", "{AF4B5B14-AF9F-44D9-97D5-1E4B0D3A342A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullStackJobs.AuthServer.IntegrationTests", "FullStackJobs.AuthServer.IntegrationTests\FullStackJobs.AuthServer.IntegrationTests.csproj", "{AF4B5B14-AF9F-44D9-97D5-1E4B0D3A342A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
