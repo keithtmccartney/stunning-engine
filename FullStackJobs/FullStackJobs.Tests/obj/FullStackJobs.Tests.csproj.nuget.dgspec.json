@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.AuthServer.Infrastructure\\FullStackJobs.AuthServer.Infrastructure.csproj": {}
+    "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.Tests\\FullStackJobs.Tests.csproj": {}
   },
   "projects": {
-    "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.AuthServer.Infrastructure\\FullStackJobs.AuthServer.Infrastructure.csproj": {
+    "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.Tests\\FullStackJobs.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.AuthServer.Infrastructure\\FullStackJobs.AuthServer.Infrastructure.csproj",
-        "projectName": "FullStackJobs.AuthServer.Infrastructure",
-        "projectPath": "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.AuthServer.Infrastructure\\FullStackJobs.AuthServer.Infrastructure.csproj",
+        "projectUniqueName": "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.Tests\\FullStackJobs.Tests.csproj",
+        "projectName": "FullStackJobs.Tests",
+        "projectPath": "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.Tests\\FullStackJobs.Tests.csproj",
         "packagesPath": "C:\\Users\\keith\\.nuget\\packages\\",
-        "outputPath": "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.AuthServer.Infrastructure\\obj\\",
+        "outputPath": "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,35 +43,29 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "IdentityServer4.EntityFramework": {
-              "target": "Package",
-              "version": "[4.1.1, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.8, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[3.1.8, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[16.2.0, )"
             },
-            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+            "coverlet.collector": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[1.2.0, )"
             },
-            "Microsoft.Extensions.Configuration.FileExtensions": {
+            "xunit": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[2.4.0, )"
             },
-            "Microsoft.Extensions.Configuration.Json": {
+            "xunit.runner.visualstudio": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[2.4.0, )"
             }
           },
           "imports": [
@@ -85,9 +79,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

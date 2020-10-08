@@ -45,7 +45,7 @@
           "dependencies": {
             "IdentityServer4.EntityFramework": {
               "target": "Package",
-              "version": "[4.1.0, )"
+              "version": "[4.1.1, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",

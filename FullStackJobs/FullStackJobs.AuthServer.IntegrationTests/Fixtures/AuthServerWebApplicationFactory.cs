@@ -1,4 +1,5 @@
 ﻿using FullStackJobs.AuthServer.Infrastructure.Data;
+using FullStackJobs.Tests;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;

@@ -28,11 +28,11 @@
           "lib/netstandard2.0/IdentityModel.dll": {}
         }
       },
-      "IdentityServer4/4.1.0": {
+      "IdentityServer4/4.1.1": {
         "type": "package",
         "dependencies": {
           "IdentityModel": "4.4.0",
-          "IdentityServer4.Storage": "4.1.0",
+          "IdentityServer4.Storage": "4.1.1",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "3.1.0",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.6.0",
           "Newtonsoft.Json": "12.0.2"
@@ -47,11 +47,11 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "IdentityServer4.EntityFramework/4.1.0": {
+      "IdentityServer4.EntityFramework/4.1.1": {
         "type": "package",
         "dependencies": {
-          "IdentityServer4": "4.1.0",
-          "IdentityServer4.EntityFramework.Storage": "4.1.0"
+          "IdentityServer4": "4.1.1",
+          "IdentityServer4.EntityFramework.Storage": "4.1.1"
         },
         "compile": {
           "lib/netcoreapp3.1/IdentityServer4.EntityFramework.dll": {}
@@ -60,11 +60,11 @@
           "lib/netcoreapp3.1/IdentityServer4.EntityFramework.dll": {}
         }
       },
-      "IdentityServer4.EntityFramework.Storage/4.1.0": {
+      "IdentityServer4.EntityFramework.Storage/4.1.1": {
         "type": "package",
         "dependencies": {
           "AutoMapper": "[10.0.0, 11.0.0)",
-          "IdentityServer4.Storage": "4.1.0",
+          "IdentityServer4.Storage": "4.1.1",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.0"
         },
         "compile": {
@@ -74,7 +74,7 @@
           "lib/netstandard2.0/IdentityServer4.EntityFramework.Storage.dll": {}
         }
       },
-      "IdentityServer4.Storage/4.1.0": {
+      "IdentityServer4.Storage/4.1.1": {
         "type": "package",
         "dependencies": {
           "IdentityModel": "4.4.0"
@@ -1647,60 +1647,60 @@
         "lib/netstandard2.0/IdentityModel.xml"
       ]
     },
-    "IdentityServer4/4.1.0": {
-      "sha512": "9+ACQd/X4JYQTcNHn+6yMNeqPI2ItKA6YmTjNRem4nqFGhHqkXXYcQpJSU3FyMlXjwTr68zTrz9lwqxSOarvNg==",
+    "IdentityServer4/4.1.1": {
+      "sha512": "PA7IYDMoUQQY7czXa8lmIorvMvLkbjUaWCpB9+guG6N4EvpyHWwsccDXrc/rHIKDdtXsqSgo5jIbsu3y7qOqww==",
       "type": "package",
-      "path": "identityserver4/4.1.0",
+      "path": "identityserver4/4.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.jpg",
-        "identityserver4.4.1.0.nupkg.sha512",
+        "identityserver4.4.1.1.nupkg.sha512",
         "identityserver4.nuspec",
         "lib/netcoreapp3.1/IdentityServer4.dll",
         "lib/netcoreapp3.1/IdentityServer4.pdb",
         "lib/netcoreapp3.1/IdentityServer4.xml"
       ]
     },
-    "IdentityServer4.EntityFramework/4.1.0": {
-      "sha512": "bztwbCfzLGaCPPQ38mn4ZqIbNMutZXvlgfXojo3EiDrsRLfFIiQ7BJ9q62xBPzhWkUbF2dd3HCcAR0tYihWJgA==",
+    "IdentityServer4.EntityFramework/4.1.1": {
+      "sha512": "zA83SwrL/GYEne6XWdjpqrELx/+hjHOO2ULUcOuZ8/u9rqpuckV7vr0NCJDqnYYfPEUOH6IIMXvvlDXJIIe1qg==",
       "type": "package",
-      "path": "identityserver4.entityframework/4.1.0",
+      "path": "identityserver4.entityframework/4.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.jpg",
-        "identityserver4.entityframework.4.1.0.nupkg.sha512",
+        "identityserver4.entityframework.4.1.1.nupkg.sha512",
         "identityserver4.entityframework.nuspec",
         "lib/netcoreapp3.1/IdentityServer4.EntityFramework.dll",
         "lib/netcoreapp3.1/IdentityServer4.EntityFramework.pdb",
         "lib/netcoreapp3.1/IdentityServer4.EntityFramework.xml"
       ]
     },
-    "IdentityServer4.EntityFramework.Storage/4.1.0": {
-      "sha512": "yYbIDsgs4CJzFENrSXNIy7xVRgUzuFkpfnpm5+b67iWFcNWwkviNlUKnr4wwcPElZOLy24qiwertM8cdn23MsA==",
+    "IdentityServer4.EntityFramework.Storage/4.1.1": {
+      "sha512": "p0e2OM4IXGoCB6YnJVz8ZhHGT/SHRng8od9CnhQUmMduV6C0mE/Twmk/hSohpT82XtHAsMm37xJ3Y0KWpPzaZQ==",
       "type": "package",
-      "path": "identityserver4.entityframework.storage/4.1.0",
+      "path": "identityserver4.entityframework.storage/4.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.jpg",
-        "identityserver4.entityframework.storage.4.1.0.nupkg.sha512",
+        "identityserver4.entityframework.storage.4.1.1.nupkg.sha512",
         "identityserver4.entityframework.storage.nuspec",
         "lib/netstandard2.0/IdentityServer4.EntityFramework.Storage.dll",
         "lib/netstandard2.0/IdentityServer4.EntityFramework.Storage.pdb",
         "lib/netstandard2.0/IdentityServer4.EntityFramework.Storage.xml"
       ]
     },
-    "IdentityServer4.Storage/4.1.0": {
-      "sha512": "qs3rohfq5UuxGXiHOWygSC1VB7XM+oGg/hu/mU+CYJcdEeGetIP3tiLg8+YO78Lbo07gRTka3LUnwHGAuVzH6A==",
+    "IdentityServer4.Storage/4.1.1": {
+      "sha512": "RfbD+kx9/Nss5Cbn43PwUt2LU2ELXZVNamnjX4HsOIscBF+5qLHkofuCd0Gj3Qn4wfO6f/vSLYgvofZRHdVWUg==",
       "type": "package",
-      "path": "identityserver4.storage/4.1.0",
+      "path": "identityserver4.storage/4.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.jpg",
-        "identityserver4.storage.4.1.0.nupkg.sha512",
+        "identityserver4.storage.4.1.1.nupkg.sha512",
         "identityserver4.storage.nuspec",
         "lib/netstandard2.0/IdentityServer4.Storage.dll",
         "lib/netstandard2.0/IdentityServer4.Storage.pdb",
@@ -5812,7 +5812,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "IdentityServer4.EntityFramework >= 4.1.0",
+      "IdentityServer4.EntityFramework >= 4.1.1",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.8",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.8",
@@ -5867,7 +5867,7 @@
         "dependencies": {
           "IdentityServer4.EntityFramework": {
             "target": "Package",
-            "version": "[4.1.0, )"
+            "version": "[4.1.1, )"
           },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",

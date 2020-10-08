@@ -16,7 +16,7 @@ using System.Reflection;
     "tructure", "FullStackJobs.AuthServer.Infrastructure.csproj", "0")]
 [assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("FullStackJobs.Tests", "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.Tests", "FullStackJobs.Tests.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FullStackJobs.AuthServer.IntegrationTests")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FullStackJobs.AuthServer.IntegrationTests")]
