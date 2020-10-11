@@ -61,7 +61,7 @@ namespace FullStackJobs.AuthServer
                 })
                 .AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddInMemoryApiResources(Config.GetApiResources())
-                .AddInMemoryClients(Config.GetClients())
+                .AddInMemoryClients(Config.GetClients(Configuration.GetValue("AppSettings:Address", "")))
                 .AddAspNetIdentity<AppUser>();
 
             if (Environment.IsDevelopment())
@@ -76,7 +76,7 @@ namespace FullStackJobs.AuthServer
             services.ConfigureApplicationCookie((obj) =>
             {
                 obj.LoginPath = "/Accounts/Login";
-                obj.LogoutPath = "/Acconuts/Logout";
+                obj.LogoutPath = "/Accounts/Logout";
             });
 
             services.AddTransient<IProfileService, IdentityClaimsProfileService>();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FullStackJobs.AuthServer.Infrastructure.Data;
 using FullStackJobs.AuthServer.Infrastructure.Data.Identity;
 using FullStackJobs.AuthServer.Models;
 using FullStackJobs.AuthServer.Models.ViewModels;
@@ -18,18 +19,18 @@ namespace FullStackJobs.AuthServer.Controllers
     [ApiController]
     public class AccountsController : Controller
     {
+        private readonly SignInManager<AppUser> _signInManager;
         private readonly IIdentityServerInteractionService _interaction;
-        private readonly IAuthenticationSchemeProvider _schemeProvider;
         private readonly UserManager<AppUser> _userManager;
-        private readonly AppIdentityDbContext _appIdentityDbContext;
+        private readonly IUserRepository _userRepository;
         private readonly IEventService _events;
 
-        public AccountsController(IIdentityServerInteractionService interaction, IAuthenticationSchemeProvider schemeProvider, UserManager<AppUser> userManager, AppIdentityDbContext appIdentityDbContext, IEventService events)
+        public AccountsController(SignInManager<AppUser> signInManager, IIdentityServerInteractionService interaction, UserManager<AppUser> userManager, AppIdentityDbContext appIdentityDbContext, IEventService events, IUserRepository userRepository)
         {
+            _signInManager = signInManager;
             _interaction = interaction;
-            _schemeProvider = schemeProvider;
             _userManager = userManager;
-            _appIdentityDbContext = appIdentityDbContext;
+            _userRepository = userRepository;
             _events = events;
         }
 
@@ -57,6 +58,8 @@ namespace FullStackJobs.AuthServer.Controllers
             await _userManager.AddClaimAsync(user, new System.Security.Claims.Claim("email", user.Email));
             await _userManager.AddClaimAsync(user, new System.Security.Claims.Claim("role", model.Role));
 
+            await _userRepository.InsertEntity(model.Role, user.Id, user.FullName);
+
             return Ok(new SignupResponse(user, model.Role));
         }
 
@@ -64,9 +67,22 @@ namespace FullStackJobs.AuthServer.Controllers
         /// 
         /// </summary>
         [HttpGet]
-        public IActionResult Login(string returnUrl)
+        public async Task<IActionResult> Login(string returnUrl)
         {
-            return View(new LoginViewModel { ReturnUrl = returnUrl });
+            var context = await _interaction.GetAuthorizationContextAsync(returnUrl);
+            return View(new LoginViewModel
+            {
+                ReturnUrl = returnUrl,
+                Username = GetUserName(returnUrl) ?? context?.LoginHint,
+                NewAccount = returnUrl.Contains("newAccount"),
+            });
+        }
+
+        private static string GetUserName(string returnUrl)
+        {
+            const string parameter = "&userName=";
+
+            return returnUrl.Contains("userName") ? returnUrl.Substring(returnUrl.IndexOf("&userName=") + parameter.Length) : null;
         }
 
         /// <summary>
@@ -131,6 +147,16 @@ namespace FullStackJobs.AuthServer.Controllers
             };
 
             return View(vm);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Logout(string logoutId)
+        {
+            await _signInManager.SignOutAsync();
+
+            var context = await _interaction.GetLogoutContextAsync(logoutId);
+
+            return Redirect(context.PostLogoutRedirectUri);
         }
     }
 }

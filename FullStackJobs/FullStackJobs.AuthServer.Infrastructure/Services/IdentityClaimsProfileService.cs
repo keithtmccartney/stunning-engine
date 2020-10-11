@@ -37,7 +37,6 @@ namespace FullStackJobs.AuthServer.Infrastructure.Services
 
             claims.Add(new Claim(JwtClaimTypes.GivenName, user.FullName));
             claims.Add(new Claim(IdentityServerConstants.StandardScopes.Email, user.Email));
-
             claims.Add(new Claim(ClaimTypes.Role, principal.Claims.First(c => c.Type == "role").Value));
 
             context.IssuedClaims = claims;
