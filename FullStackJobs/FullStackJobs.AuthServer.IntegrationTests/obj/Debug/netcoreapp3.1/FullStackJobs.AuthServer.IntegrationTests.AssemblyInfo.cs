@@ -11,9 +11,8 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("FullStackJobs.AuthServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.AuthServer", "FullStackJobs.AuthServer.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("FullStackJobs.AuthServer.Infrastructure, Version=1.0.0.0, Culture=neutral, Public" +
-    "KeyToken=null", "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.AuthServer.Infras" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("FullStackJobs.AuthServer", "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.AuthServer", "FullStackJobs.AuthServer.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("FullStackJobs.AuthServer.Infrastructure", "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.AuthServer.Infras" +
     "tructure", "FullStackJobs.AuthServer.Infrastructure.csproj", "0")]
 [assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("FullStackJobs.Tests", "G:\\git\\Source\\Repos\\stunning-engine\\FullStackJobs\\FullStackJobs.Tests", "FullStackJobs.Tests.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FullStackJobs.AuthServer.IntegrationTests")]
